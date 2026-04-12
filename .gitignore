@@ -1,0 +1,9 @@
+.env
+*.csv
+__pycache__/
+*.pyc
+venv/
+openweather_venv/
+logs/
+airflow.db
+.aws/
