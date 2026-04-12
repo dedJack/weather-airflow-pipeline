@@ -194,12 +194,6 @@ Go to your S3 bucket in the AWS console — you should see a new CSV file named 
 
 ## Common Issues
 
-**`s3_disable_express_session_auth` error**
-This means `aiobotocore` and `botocore` are mismatched. Fix it with:
-```bash
-pip install "s3fs==2026.3.0" "aiobotocore==3.4.0" "botocore==1.42.84" --force-reinstall
-```
-
 **DAG not showing up in Airflow UI**
 Make sure the DAG file is in `~/airflow/dags/` and that the scheduler is running.
 
@@ -219,8 +213,12 @@ Double-check that your `.env` file is in the same directory you're running from,
 ## If You Just Want to See It Working
 
 Since this requires AWS infrastructure, here's proof it works:
+### Tasks running insdie DAG
+<img width="1265" height="821" alt="weather_dag-graph" src="https://github.com/user-attachments/assets/bb7956e9-0c59-4106-bdbb-d8aa0b08e42e" />
 
-*(Add your screenshot of the Airflow UI showing successful DAG run + S3 bucket screenshot here)*
+### Data Stored in CSV format in S3 bucket
+<img width="1919" height="359" alt="image" src="https://github.com/user-attachments/assets/c3f925fc-452c-4056-8ff3-a26bc2810547" />
+
 
 ---
 
