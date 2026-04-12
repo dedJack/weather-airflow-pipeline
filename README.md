@@ -224,5 +224,5 @@ Since this requires AWS infrastructure, here's proof it works:
 
 ## Author
 
-**Your Name**  
+**Aman Choudhary**
 [LinkedIn](https://linkedin.com/in/amanchoudhary11) · [GitHub](https://github.com/dedJack)
